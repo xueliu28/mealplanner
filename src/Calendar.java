@@ -3,5 +3,7 @@
  *
  */
 public class Calendar {
+	private String dayOfTheWeek;
+	
 
 }
