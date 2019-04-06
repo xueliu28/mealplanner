@@ -3,6 +3,8 @@
  *
  */
 public class Meals {
-	String mealType;
-	boolean partOfAMealPlan; 
+	private String mealType;
+	private boolean partOfAMealPlan;
+	
+	
 }
