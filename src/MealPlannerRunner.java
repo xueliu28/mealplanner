@@ -5,7 +5,7 @@
  */
 public class MealPlannerRunner {
 	public static void main(String[] args) {
-		
-
+		MealPlanner mp = new MealPlanner();
+		mp.run();
 	}
 }
