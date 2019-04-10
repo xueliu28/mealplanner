@@ -19,8 +19,8 @@ public class FileReader {
 	 * The constructor creates the file object based on the file name and reads the
 	 * file
 	 * 
-	 * @param file 
-	 * ****************************************************************************
+	 * @param filename name of the file to be read
+	 *****************************************************************************
 	 */
 	public FileReader(String filename) {
 		this.filename = filename;

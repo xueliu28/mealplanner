@@ -19,7 +19,7 @@ public class FileWriter {
 	/*****************************************************************************
 	 * The following constructor creates a file and printwriter object
 	 * 
-	 * @param filename
+	 * @param filename to write to
 	 *****************************************************************************
 	 */
 	public FileWriter(String filename) {
@@ -46,7 +46,7 @@ public class FileWriter {
 	/*****************************************************************************
 	 * returns the file to write to
 	 * 
-	 * @return
+	 * @return file to write to 
 	 *****************************************************************************
 	 */
 	public File getFileToWriteTo() {
@@ -56,7 +56,7 @@ public class FileWriter {
 	/*****************************************************************************
 	 * writes to a file based on the line given to write
 	 * 
-	 * @param linesToWrite
+	 * @param linesToWrite lines to write to the file
 	 *****************************************************************************
 	 */
 	public void writeToFile(String linesToWrite) {

@@ -11,10 +11,7 @@ public class GroceryList {
 	private ArrayList<Ingredient> groceryList;
 
 	/**
-	 * The following constructor creates a grocery list item
-	 * 
-	 * @param ingredient
-	 * @param quantity
+	 * The following constructor creates a grocery list item 
 	 */
 	public GroceryList() {
 		ArrayList<Ingredient> listOfIngredients = new ArrayList<Ingredient>();
@@ -43,7 +40,8 @@ public class GroceryList {
 	 * Given a list of ingredients, the following method adds them to the grocery
 	 * list
 	 * 
-	 * @param listOfIngredients
+	 * @param groceryList to be modified
+	 * @param listOfIngredients to be added
 	 */
 	public void addIngredientsToGroceryList(ArrayList<Ingredient> groceryList,
 			ArrayList<Ingredient> listOfIngredients) {

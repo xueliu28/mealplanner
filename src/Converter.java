@@ -11,9 +11,9 @@ public class Converter {
 	
 	/**
 	 * Constructor to change quantities of an ingredient based on measurement unit
-	 * @param ingredientUnitChangeFrom
-	 * @param Quantity
-	 * @param ingredientUnitChangeTo
+	 * @param ingredientUnitChangeFrom name of the unit to change from
+	 * @param Quantity quantity of an ingredient
+	 * @param ingredientUnitChangeTo name of the unit to change to
 	 */
 	public Converter (String ingredientUnitChangeFrom, int Quantity, String ingredientUnitChangeTo) {
 		// TODO 
@@ -21,9 +21,9 @@ public class Converter {
 
 	/**
 	 * Constructor to changes a dish's ingrentient quantities and cooking time based on service size change
-	 * @param ingredientUnitChangeFrom
-	 * @param Quantity
-	 * @param ingredientUnitChangeTo
+	 * @param servingSizeToChangeFrom serving size to change from
+	 * @param Quantity quantity of an ingredient
+	 * @param servingSizeToChangeTo serving size to change to
 	 */
 	public Converter (int servingSizeToChangeFrom, int Quantity, int servingSizeToChangeTo) {
 		// TODO 

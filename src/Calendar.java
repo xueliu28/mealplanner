@@ -25,8 +25,8 @@ public class Calendar {
 	/**
 	 * The following method modifies the calendar instance variable based on the
 	 * day and meal selected and adds the dish name instead of "meal" string
-	 * @param mealName
-	 * @param dayOfTheWeek
+	 * @param mealName i.e. lunch, dinner, snack, etc.
+	 * @param dayOfTheWeek i.e. Sunday
 	 * @return updated calendar
 	 */
 	public String[][] addADishToCalendar (String mealName, String dayOfTheWeek) {
@@ -37,8 +37,8 @@ public class Calendar {
 	/**
 	 * The following method removes a meal from the calendar and places the word "meal"
 	 * as a placeholder
-	 * @param mealName
-	 * @param dayOfTheWeek
+	 * @param mealName i.e. lunch, dinner, snack, etc.
+	 * @param dayOfTheWeek i.e. Sunday
 	 * @return updated calendar
 	 */
 	public String[][] removeADishFromTheCalendar (String mealName, String dayOfTheWeek){
@@ -49,10 +49,10 @@ public class Calendar {
 	/**
 	 * The following method replaces a meal on the calendar with another meal 
 	 * from the calendar
-	 * @param mealNameToBeReplaced
-	 * @param dayOfTheWeekToBeReplaced
-	 * @param mealNameReplacedWith
-	 * @param dayOfTheWeekReplacedWith
+	 * @param mealNameToBeReplaced meal to be replaced
+	 * @param dayOfTheWeekToBeReplaced day of the week to be changed from
+	 * @param mealNameReplacedWith meal to be replaced with
+	 * @param dayOfTheWeekReplacedWith day of the week to be changed to
 	 * @return updated calendar
 	 */
 	public String[][] replaceAMealWithAnother (String mealNameToBeReplaced, String dayOfTheWeekToBeReplaced, String mealNameReplacedWith, String dayOfTheWeekReplacedWith){
