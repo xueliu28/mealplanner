@@ -11,12 +11,11 @@ public class Dish {
 	private String dishName;
 	private ArrayList<Ingredient> ingredients;
 	private ArrayList<String> cookingSteps;
-	private int cookingTimeInMinutes;
-	private int cookingTimeInHours; // not used in constructor - use will depend on what we get from API
+	private double cookingTimeInMinutes;
 	private int numOfPeopleToServe; //serving size
 
 	//same constructor can be used for API pull or manual input of the recipe
-	public Dish (String dishName, ArrayList <Ingredient> ingredients, ArrayList <String> cookingSteps, int cookingTimeInMinutes, int numOfPeopleToServe) {
+	public Dish (String dishName, ArrayList <Ingredient> ingredients, ArrayList <String> cookingSteps, double cookingTimeInMinutes, int numOfPeopleToServe) {
 		this.dishName = dishName;
 		this.ingredients = ingredients;
 		this.cookingSteps = cookingSteps;
@@ -54,16 +53,8 @@ public class Dish {
 	 * getter method
 	 * @return the cookingTimeInMinutes
 	 */
-	public int getCookingTimeInMinutes() {
+	public double getCookingTimeInMinutes() {
 		return cookingTimeInMinutes;
-	}
-
-	/**
-	 * getter method
-	 * @return the cookingTimeInHours
-	 */
-	public int getCookingTimeInHours() {
-		return cookingTimeInHours;
 	}
 
 	/**

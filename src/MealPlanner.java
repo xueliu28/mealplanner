@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class MealPlanner {
 
 	public void run() {
-		//Initializing scanner
+		//Initialize a scanner
 
 		// prompt the user whether they would like to create a new meal plan or use an existing one?
 

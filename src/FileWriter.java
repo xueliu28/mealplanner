@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class FileWriter {
 
-	String filename;
+	String fileName;
 	ArrayList<String> linesToWrite;
 	PrintWriter printWriter;
 	File fileToWriteTo;
@@ -19,15 +19,15 @@ public class FileWriter {
 	/*****************************************************************************
 	 * The following constructor creates a file and printwriter object
 	 * 
-	 * @param filename to write to
+	 * @param fileName to write to
 	 *****************************************************************************
 	 */
-	public FileWriter(String filename) {
-		File fileToWriteTo = new File(filename);
+	public FileWriter(String fileName) {
+		File fileToWriteTo = new File(fileName);
 		this.fileToWriteTo = fileToWriteTo;
 		try {
 			if (fileToWriteTo.exists()) {
-				System.out.println("Warning! The file " + filename + " exists and will be overwriten." + "\n");
+				System.out.println("Warning! The file " + fileName + " exists and will be overwriten." + "\n");
 			}
 			fileToWriteTo.createNewFile();
 		} catch (IOException e1) {

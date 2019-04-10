@@ -11,19 +11,19 @@ import java.util.Scanner;
 public class FileReader {
 
 	// instance variables
-	private String filename;
+	private String fileName;
 	private ArrayList<String> lines;
-	private Scanner FileScanner;
+	private Scanner fileScanner;
 
 	/******************************************************************************
 	 * The constructor creates the file object based on the file name and reads the
 	 * file
 	 * 
-	 * @param filename name of the file to be read
+	 * @param fileName name of the file to be read
 	 *****************************************************************************
 	 */
-	public FileReader(String filename) {
-		this.filename = filename;
+	public FileReader(String fileName) {
+		this.fileName = fileName;
 		lines = new ArrayList<String>();
 		readfile();
 	}
@@ -34,8 +34,8 @@ public class FileReader {
 	 * @return file name 
 	 * ****************************************************************************
 	 */
-	public String getFilename() {
-		return filename;
+	public String getFileName() {
+		return fileName;
 	}
 
 	/******************************************************************************
@@ -55,7 +55,7 @@ public class FileReader {
 	 * *****************************************************************************
 	 */
 	public Scanner getFileScanner() {
-		return FileScanner;
+		return fileScanner;
 	}
 
 	/******************************************************************************
@@ -65,9 +65,9 @@ public class FileReader {
 	 */
 	private void readfile() {
 		try {
-			File inputfile = new File(filename);
+			File inputfile = new File(fileName);
 			Scanner in = new Scanner(inputfile);
-			this.FileScanner = in;
+			this.fileScanner = in;
 
 			while (in.hasNextLine()) {
 				String line = in.nextLine();
@@ -88,7 +88,7 @@ public class FileReader {
 	 * *****************************************************************************
 	 */
 	private boolean hasPeriod() {
-		if (!(filename.contains("."))) {
+		if (!(fileName.contains("."))) {
 			System.out.println("The file does not seem to have a file extension at the end.");
 			System.out.println("Please enter the file name with a valid extension.");
 			return false;
@@ -109,7 +109,7 @@ public class FileReader {
 		if (hasPeriod() == true) {
 
 			// splitting and storing the words from the file name
-			String fileNameWords[] = filename.split("\\.");
+			String fileNameWords[] = fileName.split("\\.");
 
 			// find the last item followed by delim "." which is
 			// generally the file extension

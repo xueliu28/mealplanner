@@ -4,29 +4,33 @@
  *
  */
 public class Converter {
-	private String UnitToChangeFrom;
-	private String UnitToChangeTo;
-	private int ingredientQuantity;
+	private String unitToChangeFrom;
+	private String unitToChangeTo;
+	private double ingredientQuantity;
 	private Dish dishToConvertBasedOnServingSize;
 	
 	/**
 	 * Constructor to change quantities of an ingredient based on measurement unit
+	 * This will be used for grocery list ingredient accumulation process
 	 * @param ingredientUnitChangeFrom name of the unit to change from
-	 * @param Quantity quantity of an ingredient
+	 * @param quantity quantity of an ingredient
 	 * @param ingredientUnitChangeTo name of the unit to change to
 	 */
-	public Converter (String ingredientUnitChangeFrom, int Quantity, String ingredientUnitChangeTo) {
+	public Converter (String ingredientUnitChangeFrom, int quantity, String ingredientUnitChangeTo) {
 		// TODO 
 	}
 
 	/**
-	 * Constructor to changes a dish's ingrentient quantities and cooking time based on service size change
+	 * Constructor to changes a dish's ingredient quantities and cooking time based on service size change
 	 * @param servingSizeToChangeFrom serving size to change from
-	 * @param Quantity quantity of an ingredient
+	 * @param quantity quantity of an ingredient
 	 * @param servingSizeToChangeTo serving size to change to
+	 * @return quantity
 	 */
-	public Converter (int servingSizeToChangeFrom, int Quantity, int servingSizeToChangeTo) {
-		// TODO 
+	public double Converter (int servingSizeToChangeFrom, double quantity, int servingSizeToChangeTo) {
+		double updatedQuantity = 0;
+		// TODO
+		return quantity;
 	}
 
 	
@@ -39,7 +43,7 @@ public class Converter {
 	
 	public Dish convert () {
 		Dish d = null;
-		//TODO
+		//TODO add the body
 		return d;
 	}
 }
