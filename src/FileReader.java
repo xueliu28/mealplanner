@@ -3,10 +3,10 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/*****************************************************************************
+/**
  * The following class represents an object that reads a file and includes
  * properties related to a file and methods
- ******************************************************************************
+ *
  */
 public class FileReader {
 
@@ -15,12 +15,11 @@ public class FileReader {
 	private ArrayList<String> lines;
 	private Scanner fileScanner;
 
-	/******************************************************************************
+	/**
 	 * The constructor creates the file object based on the file name and reads the
 	 * file
 	 * 
 	 * @param fileName name of the file to be read
-	 *****************************************************************************
 	 */
 	public FileReader(String fileName) {
 		this.fileName = fileName;
@@ -28,40 +27,38 @@ public class FileReader {
 		readfile();
 	}
 
-	/******************************************************************************
+	/**
 	 * returns the file name
 	 * 
-	 * @return file name 
-	 * ****************************************************************************
+	 * @return file name
 	 */
 	public String getFileName() {
 		return fileName;
 	}
 
-	/******************************************************************************
+	/**
 	 * returns the lines contained in a file
 	 * 
-	 * @return lines 
-	 * ****************************************************************************
+	 * @return lines
 	 */
 	public ArrayList<String> getLines() {
 		return lines;
 	}
 
-	/******************************************************************************
+	/**
 	 * returns the file scanner object of a file
 	 * 
-	 * @return scanner 
-	 * *****************************************************************************
+	 * @return scanner
+	 * 
 	 */
 	public Scanner getFileScanner() {
 		return fileScanner;
 	}
 
-	/******************************************************************************
+	/**
 	 * This method create and read the entire file. It will store the contents in
-	 * the lines ArrayList. 
-	 ******************************************************************************
+	 * the lines ArrayList.
+	 *
 	 */
 	private void readfile() {
 		try {
@@ -81,11 +78,11 @@ public class FileReader {
 		// TODO Auto-generated method stub
 	}
 
-	/******************************************************************************
+	/**
 	 * This is a helper method checks if the file name contains a period character.
 	 * 
-	 * @return true or false 
-	 * *****************************************************************************
+	 * @return true or false
+	 *
 	 */
 	private boolean hasPeriod() {
 		if (!(fileName.contains("."))) {
@@ -96,12 +93,12 @@ public class FileReader {
 		return true;
 	}
 
-	/******************************************************************************
+	/**
 	 * The following method returns the file extension if it exists (i.e. if the
 	 * file has a period in the file name.)
 	 * 
-	 * @return file extension 
-	 ******************************************************************************
+	 * @return file extension
+	 *
 	 */
 	public String getFileExtension() {
 		String FileExtension = "";

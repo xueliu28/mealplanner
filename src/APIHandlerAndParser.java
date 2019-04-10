@@ -7,6 +7,7 @@ import java.util.ArrayList;
  */
 public class APIHandlerAndParser {
 	private ArrayList<String> infoFromAPI;
+	private ArrayList<String> parsedInfo;
 
 	/**
 	 * The following constructor creates an API handler that works with a public API
@@ -18,6 +19,7 @@ public class APIHandlerAndParser {
 
 	/**
 	 * The following method pulls information from an API and stores it in ArrayList
+	 * 
 	 * @return updated ArrayList of information
 	 */
 	public ArrayList<String> pullInfo() {
@@ -26,9 +28,12 @@ public class APIHandlerAndParser {
 	}
 
 	/**
-	 * @return the infoFromAPI
+	 * The following method parses the info from API and returns it
+	 * 
+	 * @return parsedInfo parsed info
 	 */
-	public ArrayList<String> getInfoFromAPI() {
-		return infoFromAPI;
+	public ArrayList<String> parseInfoFromAPI() {
+		// TODO
+		return parsedInfo;
 	}
 }

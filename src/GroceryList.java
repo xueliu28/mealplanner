@@ -11,7 +11,7 @@ public class GroceryList {
 	private ArrayList<Ingredient> groceryList;
 
 	/**
-	 * The following constructor creates a grocery list item 
+	 * The following constructor creates a grocery list item
 	 */
 	public GroceryList() {
 		ArrayList<Ingredient> listOfIngredients = new ArrayList<Ingredient>();
@@ -40,7 +40,7 @@ public class GroceryList {
 	 * Given a list of ingredients, the following method adds them to the grocery
 	 * list
 	 * 
-	 * @param groceryList to be modified
+	 * @param groceryList       to be modified
 	 * @param listOfIngredients to be added
 	 */
 	public void addIngredientsToGroceryList(ArrayList<Ingredient> groceryList,
@@ -49,7 +49,19 @@ public class GroceryList {
 	}
 
 	/**
-	 * The following method displays the hashmap on the user GUI
+	 * Given a grocery list, the following method removed an item based on the
+	 * item's index number
+	 * 
+	 * @param groceryList               to be modified
+	 * @param indexOfTheItemToBeRemoved index of the item
+	 */
+	public void removeIngredientsFromGroceryList(ArrayList<Ingredient> groceryList, int indexOfTheItemToBeRemoved) {
+		// TODO Auto-generated method stub
+	}
+
+	/**
+	 * The following method displays the grocery list, along with an index starting
+	 * with 1 1. Apples 2. Bananas
 	 */
 	public void displayGroceryList() {
 		// TODO add the display method

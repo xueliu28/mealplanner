@@ -5,9 +5,9 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/*******************************************************************************
+/**
  * The following class represents a file writer and its properties and methods
- * *****************************************************************************
+ *
  */
 public class FileWriter {
 
@@ -16,11 +16,11 @@ public class FileWriter {
 	PrintWriter printWriter;
 	File fileToWriteTo;
 
-	/*****************************************************************************
+	/**
 	 * The following constructor creates a file and printwriter object
 	 * 
 	 * @param fileName to write to
-	 *****************************************************************************
+	 *
 	 */
 	public FileWriter(String fileName) {
 		File fileToWriteTo = new File(fileName);
@@ -43,21 +43,21 @@ public class FileWriter {
 		}
 	}
 
-	/*****************************************************************************
+	/**
 	 * returns the file to write to
 	 * 
-	 * @return file to write to 
-	 *****************************************************************************
+	 * @return file to write to
+	 *
 	 */
 	public File getFileToWriteTo() {
 		return fileToWriteTo;
 	}
 
-	/*****************************************************************************
+	/**
 	 * writes to a file based on the line given to write
 	 * 
 	 * @param linesToWrite lines to write to the file
-	 *****************************************************************************
+	 *
 	 */
 	public void writeToFile(String linesToWrite) {
 		printWriter.print(linesToWrite);

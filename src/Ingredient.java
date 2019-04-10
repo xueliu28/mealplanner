@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 /**
- * The following class represents an ingredient in a recipe 
+ * The following class represents an ingredient in a recipe
  *
  */
 public class Ingredient {
@@ -9,7 +9,7 @@ public class Ingredient {
 	private int quantity;
 	private String quantityUnit;
 
-	public Ingredient (String ingredientName, int quantity, String quantityUnit) {
+	public Ingredient(String ingredientName, int quantity, String quantityUnit) {
 		this.ingredientName = ingredientName;
 		this.quantity = quantity;
 		this.quantityUnit = quantityUnit;
