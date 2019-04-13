@@ -34,8 +34,11 @@ public class MealPlanner {
 
 		// while loop - do the following until the user clicks the "done with mealplan"
 		// button
-
-		// create a new API handler and parser object and get parsed information from it
+		
+		// Ask user whether they want to manually input the recipe or search the API for a recipe
+		// if the user wants to create it manually we can run it through 'Manual Recipe Handler' and create a dish object
+		// if the user chooses to search for an ingredient/recipe on the API, it will run create a new API handler and 
+		// parser object and get parsed information from it
 
 		// create a new dish object
 
